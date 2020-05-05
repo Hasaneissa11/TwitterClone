@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:onClick="rootTapped"
+    android:background="#142850">
+
+    <ImageView
+        android:id="@+id/twitterIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_twitter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:textColor="#dae1e7"
+
+        android:background="#00909e"
+        android:layout_margin="35dp"
+        android:id="@+id/emailLoginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/twitterIcon"
+        android:hint="Enter Your Email"/>
+
+    <EditText
+        android:id="@+id/passwordLoginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:background="#00909e"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:textColor="#dae1e7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLoginEditText"
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="232dp" />
+    <Button
+        android:onClick="Login"
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordLoginEditText"
+        android:layout_margin="60dp"
+        android:text="Log In"
+        android:textColor="#ffffff"
+        android:background="#27496d"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

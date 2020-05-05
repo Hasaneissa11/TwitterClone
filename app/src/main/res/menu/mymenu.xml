@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+
+     android:title="Log Out"
+     app:showAsAction="never"
+        android:id="@+id/LogOutUserItem"
+        android:orderInCategory="100"
+
+        />
+    <item
+      android:title="Tweet"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:icon="@drawable/send_button"
+        android:id="@+id/sendTweet"
+        />
+    <item
+        android:title="home"
+        android:orderInCategory="1"
+        android:id="@+id/Home"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home"
+        />
+
+</menu>
